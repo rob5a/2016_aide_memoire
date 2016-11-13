@@ -1,0 +1,9 @@
+
+
+
+
+rosrun camera_calibration cameracalibrator.py --size 6x4 --square 0.037  left:=/zed/left/image_raw right:=/zed/right/image_raw left_camera:=/zed/left right_camera:=/zed/right
+
+
+ROS_NAMESPACE=zed rosrun stereo_image_proc stereo_image_proc
+

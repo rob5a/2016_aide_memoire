@@ -1,0 +1,4 @@
+
+# Calibration stereo
+kalibr_calibrate_cameras --bag cam_checkerboard.bag --topics /cam0/image_raw /cam1/image_raw --models pinhole-radtan pinhole-radtan --target checkerboard_7x6.yaml --dont-show-report --use-blakezisserman
+

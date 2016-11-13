@@ -1,0 +1,12 @@
+
+# mettre args="-ip 192.168.1.X" dans les parametre du noeud driver
+rosed ardrone_tutorials keyboard_controller_with_tags.launch 
+
+
+rosbag record /ardrone/imu /ardrone/land /ardrone/mag /ardrone/navdata /ardrone/odometry /ardrone/reset /ardrone/takeoff /cmd_vel /ardrone/front/image_raw /ardrone/front/camera_info /tf
+
+rosrun camera_calibration cameracalibrator.py  --size 6x4 --square 0.037 image:=/ardrone/front/image_raw camera:=/ardrone/front
+
+
+
+
